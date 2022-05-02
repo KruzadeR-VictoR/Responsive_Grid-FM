@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+}
+
+section .Grid-container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 70%;
+  justify-items: center;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+section .Grid-container .Purple,
+section .Grid-container .grey,
+section .Grid-container .white-1,
+section .Grid-container .black,
+section .Grid-container .White-2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  padding: 2.2rem;
+  border-radius: 10px;
+  background-color: #7541c8;
+  position: relative;
+  z-index: 10;
+}
+
+section .Grid-container .Purple .user,
+section .Grid-container .grey .user,
+section .Grid-container .white-1 .user,
+section .Grid-container .black .user,
+section .Grid-container .White-2 .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+section .Grid-container .Purple .user img,
+section .Grid-container .grey .user img,
+section .Grid-container .white-1 .user img,
+section .Grid-container .black .user img,
+section .Grid-container .White-2 .user img {
+  border-radius: 50%;
+  border: 2px solid #cfcfcf;
+}
+
+section .Grid-container .Purple .user .id h2,
+section .Grid-container .grey .user .id h2,
+section .Grid-container .white-1 .user .id h2,
+section .Grid-container .black .user .id h2,
+section .Grid-container .White-2 .user .id h2 {
+  font-size: 1rem;
+  color: white;
+}
+
+section .Grid-container .Purple .user .id span,
+section .Grid-container .grey .user .id span,
+section .Grid-container .white-1 .user .id span,
+section .Grid-container .black .user .id span,
+section .Grid-container .White-2 .user .id span {
+  font-size: 1rem;
+  color: #cfcfcf;
+}
+
+section .Grid-container .Purple .title,
+section .Grid-container .grey .title,
+section .Grid-container .white-1 .title,
+section .Grid-container .black .title,
+section .Grid-container .White-2 .title {
+  color: white;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+section .Grid-container .Purple .description,
+section .Grid-container .grey .description,
+section .Grid-container .white-1 .description,
+section .Grid-container .black .description,
+section .Grid-container .White-2 .description {
+  line-height: 1.5em;
+  color: #cfcfcf;
+}
+
+section .Grid-container .Purple .quote_icon,
+section .Grid-container .grey .quote_icon,
+section .Grid-container .white-1 .quote_icon,
+section .Grid-container .black .quote_icon,
+section .Grid-container .White-2 .quote_icon {
+  position: absolute;
+  top: 0;
+  right: 6rem;
+  height: 9rem;
+  z-index: -1;
+}
+
+section .Grid-container .grey {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-color: #48556a;
+}
+
+section .Grid-container .white-1,
+section .Grid-container .White-2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: white;
+}
+
+section .Grid-container .white-1 .id h2,
+section .Grid-container .white-1 .title,
+section .Grid-container .White-2 .id h2,
+section .Grid-container .White-2 .title {
+  color: black !important;
+}
+
+section .Grid-container .white-1 .description,
+section .Grid-container .White-2 .description {
+  color: rgba(0, 0, 0, 0.705);
+}
+
+section .Grid-container .black {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  background-color: #19212e;
+}
+
+section .Grid-container .black .user img {
+  border: 2px solid #7541c8;
+}
+
+section .Grid-container .White-2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .Grid-container {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    max-width: 90% !important;
+  }
+  .Purple,
+  .grey,
+  .white-1,
+  .black,
+  .White-2 {
+    -ms-grid-column: 1 !important;
+    grid-column: 1/1 !important;
+  }
+  .White-2 {
+    grid-row: auto !important;
+  }
+  .quote_icon {
+    right: 2rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
